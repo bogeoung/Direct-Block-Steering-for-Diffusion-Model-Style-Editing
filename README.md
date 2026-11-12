@@ -163,16 +163,16 @@ All methods in this table are evaluated at matched LPIPS 0.35. Higher CSD
 indicates stronger style transfer; higher DINOv2 and prompt fidelity indicate
 better preservation of the unsteered image and requested content, respectively.
 
-| **Method** | **CSD ↑** | **DINOv2 to base ↑** | **Prompt fidelity ↑** |
-| --- | ---: | ---: | ---: |
-| **DBsteer** | **0.486 ± 0.028** | 0.785 ± 0.008 | 0.264 ± 0.003 |
-| signed | 0.428 ± 0.017 | 0.782 ± 0.008 | 0.262 ± 0.003 |
-| dmsae (K=128) | 0.408 ± 0.022 | 0.791 ± 0.010 | 0.265 ± 0.003 |
-| dmsae (K=32) | 0.402 ± 0.017 | 0.791 ± 0.013 | 0.265 ± 0.003 |
-| louvre | 0.353 ± 0.017 | 0.816 ± 0.011 | 0.262 ± 0.003 |
-| uniform | 0.352 ± 0.013 | **0.818 ± 0.009** | 0.263 ± 0.004 |
-| clamp | 0.352 ± 0.014 | 0.800 ± 0.007 | 0.263 ± 0.003 |
-| unbox | 0.348 ± 0.013 | 0.816 ± 0.012 | 0.264 ± 0.003 |
+| **Method**  |         **CSD ↑** | **DINOv2 to base ↑** | **Prompt fidelity ↑** |
+| ----------------- | -----------------------: | --------------------------: | ---------------------------: |
+| **DBsteer** | **0.486 ± 0.028** |              0.785 ± 0.008 |               0.264 ± 0.003 |
+| signed            |           0.428 ± 0.017 |              0.782 ± 0.008 |               0.262 ± 0.003 |
+| dmsae (K=128)     |           0.408 ± 0.022 |              0.791 ± 0.010 |               0.265 ± 0.003 |
+| dmsae (K=32)      |           0.402 ± 0.017 |              0.791 ± 0.013 |               0.265 ± 0.003 |
+| louvre            |           0.353 ± 0.017 |              0.816 ± 0.011 |               0.262 ± 0.003 |
+| uniform           |           0.352 ± 0.013 |    **0.818 ± 0.009** |               0.263 ± 0.004 |
+| clamp             |           0.352 ± 0.014 |              0.800 ± 0.007 |               0.263 ± 0.003 |
+| unbox             |           0.348 ± 0.013 |              0.816 ± 0.012 |               0.264 ± 0.003 |
 
 ### Prompt-based references
 
@@ -181,9 +181,9 @@ LPIPS 0.35, so their style scores are not directly comparable with the matched
 steering results above.
 
 | **Method** | **LPIPS ↓** | **CSD ↑** | **DINOv2 to base ↑** | **Prompt fidelity ↑** |
-| --- | ---: | ---: | ---: | ---: |
-| style prompt | 0.561 ± 0.018 | 0.717 ± 0.013 | 0.571 ± 0.013 | 0.255 ± 0.002 |
-| StyleAligned | 0.613 ± 0.014 | 0.754 ± 0.018 | 0.423 ± 0.020 | 0.231 ± 0.006 |
+| ---------------- | -----------------: | ---------------: | --------------------------: | ---------------------------: |
+| style prompt     |     0.561 ± 0.018 |   0.717 ± 0.013 |              0.571 ± 0.013 |               0.255 ± 0.002 |
+| StyleAligned     |     0.613 ± 0.014 |   0.754 ± 0.018 |              0.423 ± 0.020 |               0.231 ± 0.006 |
 
 ### Qualitative examples
 
@@ -193,11 +193,6 @@ Two held-out content/style pairs are shown. The first three columns show the
 unsteered base image and DBsteer at two injection strengths. The final two
 columns are prompt-based references. DBsteer changes surface appearance while
 preserving the requested scene more directly than prompt-based generation.
-
-The metric computation, external baseline implementations, and full benchmark
-artifacts remain in the experimental workspace at
-`/home/ci/bkk/2027ICEIC/experiments/EXP01_style_steer/` and are not included as
-source code in this repository.
 
 ## Scope and provenance
 
