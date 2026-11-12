@@ -1,0 +1,2 @@
+# Keep README assets on GitHub, but exclude them from copyright-source archives.
+assets/ export-ignore

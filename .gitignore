@@ -15,3 +15,7 @@ checkpoints/
 *.png
 *.pdf
 *.log
+
+# README asset; excluded from copyright-source archives via .gitattributes.
+!assets/
+!assets/figure_qual.png
